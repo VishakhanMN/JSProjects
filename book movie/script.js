@@ -26,9 +26,11 @@ function populateUI() {
         movieSelect.ticketPrice = selectedMoviePrice;
     }
 
+    if (selectedSeats != null) {
     const getCountValue = selectedSeats.length;
     count.innerText = getCountValue;
     total.innerText = getCountValue * selectedMoviePrice;
+    }
 }
 
 function updateSelectedCount() {
